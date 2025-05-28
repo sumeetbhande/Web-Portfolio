@@ -70,7 +70,7 @@ section{
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(Image/bg.jpg);
+    background-image: url(Image/Sumeet.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -314,7 +314,7 @@ section{
 
 .skills .content .col-right .bar .html::before{
     width: 95%;
-    background-color: #e45126;
+    background-color: #0c73b8;
 }
 
 .skills .content .col-right .bar .css::before{
@@ -324,47 +324,47 @@ section{
 
 .skills .content .col-right .bar .javascript::before{
     width: 80%;
-    background-color: #e3a324;
+    background-color: #0c73b8;
 }
 
 .skills .content .col-right .bar .python::before{
     width: 85%;
-    background-color: blue;
+    background-color: #0c73b8;
 }
 
 .skills .content .col-right .bar .php::before{
     width: 65%;
-    background-color: #6d7eb8;
+    background-color: #0c73b8;
 }
 
 .skills .content .col-right .bar .java::before {
     width: 93%;
-    background-color: #FF8C42; /* light orange */
+    background-color: #0c73b8; /* light orange */
 }
 
 .skills .content .col-right .bar .springboot::before {
     width: 85%;
-    background-color: #66BB6A; /* light green */
+    background-color: #0c73b8; /* light green */
 }
 
 .skills .content .col-right .bar .kafka::before {
     width: 78%;
-    background-color: #A44A3F; /* light red-wine color */
+    background-color: #0c73b8; /* light red-wine color */
 }
 
 .skills .content .col-right .bar .docker::before {
     width: 85%;
-    background-color: #00ACC1; /* Docker's Moby Blue */
+    background-color: #0c73b8; /* Docker's Moby Blue */
 }
 
 .skills .content .col-right .bar .sql::before {
     width: 80%;
-    background-color: #7E57C2; /* purple */
+    background-color: #0c73b8; /* purple */
 }
 
 .skills .content .col-right .bar .git::before {
     width: 90%;
-    background-color: #EF5350; /* light red */
+    background-color: #0c73b8; /* light red */
 }
 
 /* Services */
@@ -435,40 +435,55 @@ section{
     background-color: #000016;
 }
 
-.work .content{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.work .content .card{
-    width: 340px;
-    margin: 15px;
-}
-
-.work .content .card .card-img{
-    position: relative;
-    width: 100%;
-    height: 260px;
-    overflow: hidden;
+.work .content .card {
+    background-color: #1e1e2f;
+    color: white;
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    text-align: center;
 }
 
-.work .content .card .card-img img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: 0.3s linear;
+.work .content .card .card-img img {
+    max-width: 130px;
+    margin-bottom: 15px;
 }
 
-.work .content .card .card-img img:hover{
-    transform: scale(1.2);
+.work .content .card .card-body h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.work .content .card .card-body h4 {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+.work .content .card .card-body p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.work .content .card:hover {
+    transform: translateY(-10px); /* subtle lift on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* enhanced shadow */
+}
+
+.work .content .card .card-img img {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.work .content .card:hover .card-img img {
+    transform: scale(1.05);
 }
 
 
@@ -582,6 +597,20 @@ section{
   .contact-form .input-box .send-btn:hover{
     background: #235bf6;
   }
+
+  .info span {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    }
+
+
 
   /* Footer */
   
@@ -748,6 +777,6 @@ section{
   }
 
 
-
+  
 
 
